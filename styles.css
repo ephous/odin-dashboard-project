@@ -17,13 +17,14 @@ ul{
 body {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 5fr 1fr;
 }
 
 .nav {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 16px;
+  background-color: aqua;
+  color: white;
 }
 
 .nav-bar {
@@ -47,8 +48,11 @@ body {
 
 .header-top {
     display: flex;
-    justify-content: space-between;
     gap: 4px;
+}
+
+.header-top > input {
+    width: 33%;
 }
 
 .user-nameplate {
@@ -68,21 +72,13 @@ body {
 
 .header-bottom {
     display: flex;
-    justify-content: space-evenly;
-    gap: 4px;
+    justify-content: flex-start;
+    gap: 8px;
 }
 
 .header-welcome {
-    flex: auto;
     background-color: lightgoldenrodyellow;
     border: 1px solid black;
-}
-
-.header-nameplate {
-    flex: auto;
-    background-color: lightgoldenrodyellow;
-    border: 1px solid black;
-
 }
 
 .header-nav-button {
@@ -94,32 +90,57 @@ body {
 .container-stuff {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
   gap: 8px;
   padding: 8px;
 
-  background-color: rgb(250,250,250);
-  border: 1px solid red;
+  background-color: rgb(225,225,225);
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 800;
 }
 
 .card-container {
   grid-row: 1/-1;
   display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 1fr) );
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(200px, 1fr) );
+  grid-template-rows: repeat(3, minmax(115px, 1fr) );
   gap: 15px;
 }
 
 .card {
-  background-color: rgb(215,215,215);
-  border: 1px solid black;
-  text-align: center;
+  background-color: white;
+  border-left: 4px solid goldenrod;
+  border-radius: 8px;
+  text-align: left;
+  padding: 4px;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.container-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .announcements {
-  border: 2px solid blue;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.announcements-item {
+    border-bottom: 1px solid lightslategray;
+}
+
+h4 {
+    font-weight: 600;
 }
 
 .trending {
-    border: 2px solid green;
+    background-color: white;
+    border-radius: 8px;
 }
