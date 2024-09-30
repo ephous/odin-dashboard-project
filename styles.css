@@ -1,0 +1,125 @@
+* {
+    
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 0.06rem;
+    line-height: 1.2;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+  }
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 5fr 1fr;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.nav-bar {
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    gap: 8px;
+}
+
+.header {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.user-nameplate {
+}
+
+.user-icon {
+    display: inline-block;
+    background-color: rebeccapurple;
+    border-radius: 8px;
+    width: 36px;
+    text-align: center;
+}
+
+.user-name {
+    display: inline-block;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4px;
+}
+
+.header-welcome {
+    flex: auto;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid black;
+}
+
+.header-nameplate {
+    flex: auto;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid black;
+
+}
+
+.header-nav-button {
+  background-color: aqua;
+  border-radius: 8px;
+  color: white;
+}
+
+.container-stuff {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+  padding: 8px;
+
+  background-color: rgb(250,250,250);
+  border: 1px solid red;
+}
+
+.card-container {
+  grid-row: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr) );
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.card {
+  background-color: rgb(215,215,215);
+  border: 1px solid black;
+  text-align: center;
+}
+
+.announcements {
+  border: 2px solid blue;
+}
+
+.trending {
+    border: 2px solid green;
+}
