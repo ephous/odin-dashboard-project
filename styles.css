@@ -71,21 +71,14 @@ body {
   color: white;
 }
 
-.container {
+.container-main {
   grid-column: 2 / -1;
   grid-row: 2 / -1; 
 
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
-  gap: 8px;
-}
-
-.container-stuff {
-  display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 8px;
   padding: 8px;
-
   background-color: rgb(225,225,225);
 }
 
@@ -94,8 +87,9 @@ h2 {
   font-weight: 800;
 }
 
-.card-container {
-  grid-row: 1/-1;
+.container-cards {
+  grid-column: 1 / 2;
+  
   display: grid;
   grid-template-columns: repeat(2, minmax(200px, 1fr) );
   grid-template-rows: repeat(3, minmax(115px, 1fr) );
@@ -115,9 +109,12 @@ h2 {
 }
 
 .container-sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  
+  grid-column: 2 / -1;
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .announcements {
