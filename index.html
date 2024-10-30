@@ -11,8 +11,11 @@
 
         <!-- In the sidebar, use more grids to lay out the navigation and branding sections -->
         <div class="sidebar">
-            <div>Dashboard</div>
-            <ul class="sidebar-nav">
+            <div class="sidebar-title">
+              <img src="../images/view-dashboard_36_36_white.svg" style="height:45px;">
+              Dashboard
+            </div>
+            <ul class="sidebar-nav sidebar-nav-1">
                 <li class="nav-item">Home</li>
                 <li class="nav-item">Profile</li>
                 <li class="nav-item">Message</li>
@@ -20,7 +23,7 @@
                 <li class="nav-item">Tasks</li>
                 <li class="nav-item">Communities</li>
             </ul>
-            <ul class="sidebar-nav">
+            <ul class="sidebar-nav sidebar-nav-2">
                 <li class="nav-item">Settings</li>
                 <li class="nav-item">Support</li>
                 <li class="nav-item">Privacy</li>
@@ -29,18 +32,27 @@
 
         <!-- In the header, use more grids to lay out the search bar, user info and buttons -->
         <div class="header">
-            <div>
-                <input class="text" placeholder="search text here...">
+            <!-- top row of header -->
+            <div class="search-bar">
+                <img src="../images/magnify.svg" style="height:25px;">
+                <input type="text" placeholder="search text here...">
             </div>
-            <div class="user-nameplate">
-                <div class="user-icon">X</div>
-                <div class="user-name">Ephous</div>
+            <div class="user-info">
+                <img src="../images/bell-ring-outline.svg" style="height:25px;">
+                <img src="../images/purple-circle.svg" style="height:45px;"> 
+                <div class="user-name">ephous</div>
             </div>
+            
+            <!-- bottom row of header -->
             <div class="header-welcome">
-                Hi there,
-                <div class="user-nameplate">
-                    <div class="user-icon">X</div>
-                    <div class="user-name">Ephous @ephous</div>
+                <div class="user-info">
+                    <div class="user-icon">
+                       <img src="../images/purple-circle.svg" style="height:80px;"> 
+                    </div>
+                    <div>
+                        <p>Hi there,</p>
+                        <div class="user-name">ephous (@ephous)</div>
+                    </div>
                 </div>
             </div>
             <div class="header-nav">
@@ -56,28 +68,69 @@
                 <h2>Your projects</h2>
                 <div class="container-cards">
                     <div class="card">
-                        <h3 class="card-title">Super Cool Project</h3>
-                        <p class="card-body">some text here...</p>
+                        <div>
+                            <h3 class="card-title">Super Cool Project</h3>
+                            <p class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iusto, saepe quaerat amet eligendi, optio eaque in molestias corporis esse velit enim?</p>
+                        </div>                       <div class="card-icons">
+                            <img src="../images/star-plus-outline.svg" style="height:20px;">
+                            <img src="../images/eye-plus-outline.svg" style="height:20px;">
+                            <img src="../images/source-fork.svg" style="height:20px;">
+                        </div>
                     </div>
                     <div class="card">
-                        <h3 class="card-title">Less Cool Project</h3>
-                        <p class="card-body">some text here...</p>
+                        <div>
+                            <h3 class="card-title">Less Cool Project</h3>
+                            <p class="card-body">Nesciunt, porro, sit ratione id est suscipit, placeat cum esse aperiam nihil dolorum enim architecto. Voluptates minima amet necessitatibus sint, quam quos?</p>
+                        </div>
+                        <div class="card-icons">
+                            <img src="../images/star-plus-outline.svg" style="height:20px;">
+                            <img src="../images/eye-plus-outline.svg" style="height:20px;">
+                            <img src="../images/source-fork.svg" style="height:20px;">
+                        </div>
                     </div>
                     <div class="card">
-                        <h3 class="card-title">Impossible App</h3>
-                        <p class="card-body">some text here...</p>
+                        <div>
+                            <h3 class="card-title">Impossible App</h3>
+                            <p class="card-body">Perferendis architecto accusantium impedit quisquam? Blanditiis, perspiciatis quo! Perspiciatis, facere odio! Sit enim minima praesentium exercitationem voluptates culpa numquam voluptate laboriosam dolorum.</p>
+                        </div>
+                        <div class="card-icons">
+                            <img src="../images/star-plus-outline.svg" style="height:20px;">
+                            <img src="../images/eye-plus-outline.svg" style="height:20px;">
+                            <img src="../images/source-fork.svg" style="height:20px;">
+                        </div>
                     </div>
                     <div class="card">
-                        <h3 class="card-title">Easy Peasy App</h3>
-                        <p class="card-body">some text here...</p>
+                        <div>
+                            <h3 class="card-title">Easy Peasy App</h3>
+                            <p class="card-body">Porro, facilis veritatis recusandae exercitationem repellendus fugit? Rerum, ullam voluptatibus. Labore rem mollitia ab voluptas at ut, tempore modi earum fuga dolore?</p>
+                        </div>
+                        <div class="card-icons">
+                            <img src="../images/star-plus-outline.svg" style="height:20px;">
+                            <img src="../images/eye-plus-outline.svg" style="height:20px;">
+                            <img src="../images/source-fork.svg" style="height:20px;">
+                        </div>
                     </div>
                     <div class="card">
-                        <h3 class="card-title">Ad Blocker</h3>
-                        <p class="card-body">some text here...</p>
+                        <div>
+                            <h3 class="card-title">Ad Blocker</h3>
+                            <p class="card-body">Harum, expedita, quia, nobis ducimus corporis necessitatibus blanditiis atque quisquam amet enim sequi esse veritatis nesciunt neque vitae aliquam officia iure temporibus.</p>
+                        </div>
+                        <div class="card-icons">
+                            <img src="../images/star-plus-outline.svg" style="height:20px;">
+                            <img src="../images/eye-plus-outline.svg" style="height:20px;">
+                            <img src="../images/source-fork.svg" style="height:20px;">
+                        </div>
                     </div>
                     <div class="card">
-                        <h3 class="card-title">Money Maker</h3>
-                        <p class="card-body">some text here...</p>
+                        <div>
+                            <h3 class="card-title">Money Maker</h3>
+                            <p class="card-body">Soluta est iusto repellendus rem fugiat iure ducimus vitae nihil, neque sit praesentium assumenda recusandae dignissimos et eos dolorum ipsum architecto? Omnis?</p>
+                        </div>
+                        <div class="card-icons">
+                            <img src="../images/star-plus-outline.svg" style="height:20px;">
+                            <img src="../images/eye-plus-outline.svg" style="height:20px;">
+                            <img src="../images/source-fork.svg" style="height:20px;">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,15 +142,15 @@
                         <ul class="announcements-list">
                             <div class="announcements-item">
                                 <h4>Site Maintenance</h4>
-                                <p>Some text here...</p>
+                                <p>Fusce viverra tristique elit consequat luctus sagittis class. Nibh litora mi ultrices commodo.</p>
                             </div>
                             <div class="announcements-item">
                                 <h4>Community Share Day</h4>
-                                <p>Some text here...</p>
+                                <p>Nascetur dignissim a sapien ultrices at! Cursus hendrerit fusce venenatis purus fringilla fusce.</p>
                             </div>
                             <div class="announcements-item">
                                 <h4>Updated Privacy Policy</h4>
-                                <p>Some text here...</p>
+                                <p>Pulvinar imperdiet adipiscing habitant dictumst euismod. Quisque consectetur eleifend tincidunt.</p>
                             </div>
                         </ul>
                     </div>
@@ -107,10 +160,34 @@
                     <h2>Trending</h2>
                     <div class="trending">
                         <ul class="trending-list">
-                            <div class="trending-item">@name1</div>
-                            <div class="trending-item">@name2</div>
-                            <div class="trending-item">@name3</div>
-                            <div class="trending-item">@name4</div>
+                            <div class="trending-item">
+                                <img src="../images/yellow-circle.svg" style="height:35px;">
+                                <div>
+                                  <p class="trending-item-name">@tegan</p>
+                                  <p class="trending-item-desc">World Peace Builder</p>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <img src="../images/blue-circle.svg" style="height:35px;">
+                                <div>
+                                    <p class="trending-item-name">@morgan</p>
+                                    <p class="trending-item-desc">Super Cool Project</p>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <img src="../images/green-circle.svg" style="height:35px;">
+                                <div>
+                                    <p class="trending-item-name">@kendall</p>
+                                    <p class="trending-item-desc">Life Changing App</p>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <img src="../images/red-circle.svg" style="height:35px;">
+                                <div>
+                                    <p class="trending-item-name">@alex</p>
+                                    <p class="trending-item-desc">No Traffic Maker</p>
+                                </div>
+                            </div>
                         </ul>
                     </div>
                 </div>
